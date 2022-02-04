@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+   <!--in stock or on sale -->
+
+   <h1>Store Online</h1>
+   <script>
+       var onStock = true;
+       var onSale = true;
+       var price = 400;
+      /* if(onStock == true && onSale == true){
+           alert("buy buy buy now!");
+       }
+
+       //we can use multimple boolean operators to combine conditional in a variety of ways
+if(onSale == true && (onStock == true || price < 60)){
+alert("We have an offert for you");
+}*/
+
+if (price < 200 || price > 600) {
+   alert("Price is too low or too high! Don't buy the gadget.");
+} else {
+   alert("Price is right! Buy the gadget.");
+}
+
+if (price >= 200 || price <= 600) {
+   alert(" Bill Price is right! Buy the gadget.");
+} else {
+   alert("Bill Price is too low or too high! Don't buy the gadget.");
+}
+   </script>
+    
+
+    
+</body>
+</html>

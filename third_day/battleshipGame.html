@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship Game</title>
+  </head>
+  <body>
+    <h1>Play battleship</h1>
+    <script>
+      //three variables to hold the location of each cell of the ship.
+      var locationOne = 3;
+      var locationTwo = 4;
+      var locationThree = 5;
+
+      //variable to hold the user's current guess, won't have a value until the user makes a guess, until then it will have the value undefined
+      var guess;
+
+      //variable to hold the number of hits set it to 0;
+
+      var hits = 0;
+
+      //variable to hol the number of guesses, set it to 0;
+      var guesses = 0;
+
+      var isSunk = false;
+      //var theMessage = prompt("Ready, aim, fire!, (Choose a number from 0-6)");
+      
+      while (guesses <= 2) {
+        var theMessage = prompt(
+          "Ready, aim, fire!, (Choose a number from 0-6)"
+        );
+       console.log(guesses)
+       //compare the value of the user vs computer
+       guess = theMessage;
+
+       guesses = guesses + 1;
+
+        //count the hits
+        
+       
+        if (locationOne == guess || locationTwo == guess || locationThree == guess) {
+           
+            isSunk=true;
+            console.log(isSunk)
+            hits = hits +1;
+            console.log(hits);
+            alert("You sank my battleship");
+        }else{
+           alert("You don't have sunk")
+        }
+    }
+      s
+    </script>
+  </body>
+</html>
