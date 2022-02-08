@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bubbles-R-Us</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+        var scores = [60,50,60,58,54,54,
+                      58,50,52,54,48,69,
+                      34,55,51,52,44,51,
+                      69,64,66,55,52,61,
+                      46,31,57,52,44,18,
+                      41,53,55,61,51,44]
+        
+        while(count < scores.length){
+            count++
+            var theValues = scores[count-1];
+            console.log("Bubble Solution " + "#" + count + " score: " + theValues);
+
+        }
+
+        console.log("Bubbles test: " + scores.length)
+        console.log("Highest bubble score: ");
+        console.log("Solutions with highest score: " + "#" + + ",");
+
+    </script>
+</body>
+</html>
