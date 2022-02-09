@@ -15,16 +15,22 @@
                       69,64,66,55,52,61,
                       46,31,57,52,44,18,
                       41,53,55,61,51,44]
-        
+        var maxScore = 0;
         while(count < scores.length){
             count++
             var theValues = scores[count-1];
             console.log("Bubble Solution " + "#" + count + " score: " + theValues);
+            
+            if(maxScore < theValues){
+              
+                maxScore = theValues;
+
+            }
 
         }
 
         console.log("Bubbles test: " + scores.length)
-        console.log("Highest bubble score: ");
+        console.log("Highest bubble score: " + maxScore);
         console.log("Solutions with highest score: " + "#" + + ",");
 
     </script>
