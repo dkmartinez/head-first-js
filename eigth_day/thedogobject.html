@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fido</title>
+</head>
+<body>
+    <script>
+        var dog = {
+            name:"Fido",
+            weight: 20.2,
+            age:4,
+            breed: "mixed",
+            activity: "fetch balls" 
+        }
+var bark;
+if (dog.weight > 20){
+    bark="WOOF WOOF";
+}else{
+    bark ="woof woof";
+}
+var speak = dog.name + " says " + bark + " when he wants to " + dog.activity;
+console.log(speak);
+
+//add new properties 
+dog.dogYears = 35;
+
+//to delete a property , we use a special keyword, delete
+delete dog.dogYears;
+//the property is delete not only the value
+//before delete it will evaluate to undefined. 
+console.log(dog)
+//if you change a property of the object in a function, youar changing the property in the ORIGINAL object
+
+function loseWeight(dog, amount){
+    dog.weight = dog.weight - amount;
+
+    //when we pass fido to a function, we are passing the reference to the object
+
+}
+alert(dog.name + " now weighs " + dog.weight);
+
+loseWeight(dog, 10);
+alert(dog.name + " now weighs " + dog.weight);
+
+
+    </script>
+</body>
+</html>
