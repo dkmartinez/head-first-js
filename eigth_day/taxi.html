@@ -37,8 +37,18 @@ var fiat = {
     color: "Medium Blue",
     passengers: "2",
     convertible: false,
-    mileage: 88000
+    mileage: 88000,
+    //a function inside the object (behahivor) they call methods
+    //properties can be functions too.
+    drive: function (){
+        //the name of the function is the name of the property
+        alert("zoom zoom!");
+
+    }//it is a drive method (drive function)
 }
+//to call the method, with dot notation 
+fiat.drive(); 
+
         var taxi = {
             make: "Webville Motors",
             model: "Taxi",
