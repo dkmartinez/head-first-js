@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with mistakes</title>
+</head>
+<body>
+    <script>
+        var song = {
+            name: "Walk This Way", 
+            artist: "Run-D.M.C",
+            minetes: 4,
+            seconds: 3,
+            genre: "80s",
+            playing: false,
+
+            play: function() {
+                if(!this.playing){ //add  this reference to mention the property of the object
+                   // this = true; invalid left-hand side
+                   this.playing = true;
+                    console.log("Playing " + this.name + " by " + this.artist); //add this referense to the propertys when use methods
+                }
+
+            },
+
+            pause: function(){
+                if(this.playing){
+                    this.playing = false;
+                }
+            }
+        };
+
+       /* this.play(); //is not a function
+        this.pause();*/
+
+        song.play();
+        song.pause();
+    </script>
+</body>
+</html>
