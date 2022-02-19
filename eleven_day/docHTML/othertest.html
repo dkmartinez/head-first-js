@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text change</title>
+</head>
+<body>
+    <h2>Green Planet</h2>
+    <p id="greenplanet">All is well</p>
+    <h2>Red Planet</h2>
+    <p id="redplanet">Nothing to report <p>other</p></p>
+    <h2>Blue Planet</h2>
+    <p id="blueplanet">All systems A-OK</p>
+    <script>
+
+        //we asign into a variable the element 
+        var planet = document.getElementById("greenplanet");
+
+        //innerHTML property element change the content of the element 
+        planet.innerHTML = "Red Alert: hit by phraser fire";
+        console.log(planet.innerHTML)
+
+    </script>
+</body>
+</html>
