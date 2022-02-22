@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var scoop = document.getElementById("raspberry"); //you get null because it doesn't exist 
+        var altText = scoop.getAttribute("alt");
+        if(altText == null){ //test to make sure there actually is an attribute value returned
+            console.log("Oh, I guess there isn't an alt attribute.");
+        }else{
+        console.log("I can't see the image in the console");
+        console.log(" but I'm told it looks like: " + altText);
+    }
+    </script>
+</body>
+</html>
